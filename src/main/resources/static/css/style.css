@@ -1,0 +1,327 @@
+/* Base styles */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    min-height: 100%;
+    background-size: cover;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+.video_box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.video_box video {
+    min-width: 100%;
+    min-height: 100%;
+
+    width: auto;
+    height: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.video_box .video_overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    left: 0px;
+    background: #000000;
+    opacity: 0.5;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    z-index: 2;
+    padding: 17px;
+}
+
+/* Container */
+.container {
+    position: absolute;
+    width: 24em;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    animation: intro 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Profile Card */
+.profile {
+    position: relative;
+}
+
+.profile--open {
+}
+
+.profile--open .profile__form {
+    border: 1.3px solid #c9a551;
+    visibility: visible;
+    height: auto;
+    opacity: 1;
+    transform: translateY(-6em);
+    padding-top: 12em;
+}
+
+.profile--open .profile__fields {
+    opacity: 1;
+    visibility: visible;
+}
+
+.profile--open .profile__avatar {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -14em);
+    border-radius: 170%;
+}
+
+.profile__form {
+    position: relative;
+    background-image: url(../img/MajaMarko.jpg);
+    background-size: cover;
+    opacity: 0;
+    height: 0;
+    padding: 3em;
+    border-radius: .25em;
+    -webkit-filter: drop-shadow(0 0 2em rgba(0, 0, 0, 0.2));
+    transition: opacity 0.5s ease-in-out,
+    height 1s ease-in-out,
+    transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    padding 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile__fields {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile__avatar {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.25em;
+    overflow: hidden;
+    width: 6em;
+    height: 6em;
+    display: block;
+    transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    will-change: transform;
+}
+
+.profile__avatar:focus {
+    outline: 0;
+}
+
+.profile__footer {
+    padding-top: 1em;
+    text-align: center;
+}
+
+/* Form */
+.field {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.label {
+    position: absolute;
+    height: 2rem;
+    line-height: 2rem;
+    bottom: 0;
+    color: #999;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.input {
+    width: 100%;
+    font-size: 100%;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #eee;
+    color: #777;
+    transition: all .2s ease-in;
+}
+
+.input:focus {
+    outline: 0;
+    border-color: #ccc;
+}
+
+.input:focus + .label,
+
+input:valid + .label {
+    transform: translateY(-100%);
+    font-size: 0.75rem;
+    color: #ccc;
+}
+
+.input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.btn {
+    width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1.3px solid #c9a551;
+    background: #000;
+    color: #fff;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #000000;
+    color: #fafff2;
+}
+
+.muteBtn {
+    width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1.3px solid #c9a551;
+    background: #000;
+    color: #fff;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.muteBtn:hover {
+    background-color: #000000;
+    color: #fafff2;
+}
+
+.myBtn {
+    width: 180px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1.3px solid #c9a551;
+    background: #000;
+    color: #fff;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    background-color: #000000;
+    color: #fafff2;
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #000000;
+    opacity: 0.75;
+    border: 1.3px solid #000000;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+    opacity: 0.75;
+    border: 1.3px solid #000000;
+}
+
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #000000;
+    opacity: 0.75;
+    border: 1.3px solid #000000;
+    color: #4b4b4b;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #000000;
+    opacity: 0.75;
+    margin: auto;
+    padding: 0;
+    border: 1.3px solid #c9a551;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.7s;
+    color : #ffffff
+}
+
+.divider {
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes intro {
+    from {
+        opacity: 0;
+        top: 0;
+    }
+    to {
+        opacity: 1;
+        top: 50%;
+    }
+}

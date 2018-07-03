@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Autumn Tango Rhapsodies</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="icon" href="img/Mmlogo.png"/>
+
+</head>
+
+<body>
+<!--Google Font - Work Sans-->
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'/>
+<div class="video_box">
+    <div class="video_overlay"></div>
+    <video autoplay="autoplay" loop="loop" muted="" id="bgVideo">
+        <source src="img/bgVideo.mp4" type="video/mp4"/>
+    </video>
+</div>
+<div class="container">
+    <div class="profile">
+        <button class="profile__avatar" id="toggleProfile">
+            <img src="img/Mmlogo.png"/>
+        </button>
+        <div class="profile__form">
+            <div class="profile__fields">
+                <div class="profile__footer">
+                    <div class="row">
+                        <a href="/register">
+                            <button class="btn btn-primary">Inregistrare</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h1>Rapsodii de Toamna cu Maja Petrović si Marko Miljević</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <button class="myBtn" id="myBtn" onclick="playPause()">Pause Video</button>
+    <button class="myBtn" id="muteBtn" onclick="muteUnmute()">Unmute Video</button>
+</div>
+
+<!--Play / Pause JavaScript Function-->
+<script>
+    var video = document.getElementById("bgVideo");
+    var btn = document.getElementById("myBtn");
+
+    function playPause() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause Video";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play Video";
+        }
+    }
+</script>
+<script>
+    var video = document.getElementById("bgVideo");
+    var muteBtn = document.getElementById("muteBtn");
+    video.muted;
+
+    function muteUnmute() {
+        if (video.muted) {
+            video.muted = false;
+            muteBtn.innerHTML = "Mute Video";
+        } else {
+            video.muted = true;
+            muteBtn.innerHTML = "Unmute Video";
+        }
+    }
+</script>
+<script src="js/index.js"></script>
+<script type="text/javascript" id="cookieinfo"
+        src="http://cookieinfoscript.com/js/cookieinfo.min.js"
+        data-bg="#645862"
+        data-fg="#FFFFFF"
+        data-link="#F1D600"
+        data-cookie="CookieInfoScript"
+        data-text-align="left"
+        data-close-text="Got it!">
+</script>
+</body>
+</html>

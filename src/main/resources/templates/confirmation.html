@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Autumn Tango Rhapsodies</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="icon" href="img/Mmlogo.png"/>
+
+</head>
+
+<body>
+<!--Google Font - Work Sans-->
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'/>
+<footer>
+    <p class="copyright">Copyright © 2018 RS</p>
+</footer>
+<div class="video_box">
+    <div class="video_overlay"></div>
+    <video autoplay="autoplay" loop="loop" muted="" id="bgVideo">
+        <source src="img/bgVideo.mp4" type="video/mp4"/>
+    </video>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Inregistrare efectuata cu succes !</h2>
+        </div>
+        <div class="modal-body">
+            <p>Va multumim !</p>
+            <p>In scurt timp o sa primiti un e-mail cu detalii despre urmatorii pasi si optiuni de plata !</p>
+        </div>
+        <div class="modal-footer">
+            <h3>Copyright © RS</h3>
+        </div>
+    </div>
+
+</div>
+
+<div class="content">
+    <button class="myBtn" id="myBtn" onclick="playPause()">Pause Video</button>
+    <div class = "divider"></div>
+    <button class="myBtn" id="muteBtn" onclick="muteUnmute()">Unmute Video</button>
+    <div class = "divider"></div>
+    <a href="http://tangomyo.ro/" class="myBtn" id="homeBtn">HomePage</a>
+    <div class = "divider"></div>
+    <a href="http://majaymarko.com/" class="myBtn" id="redirectBtn">MajayMarko.com</a>
+</div>
+
+<!--Play / Pause JavaScript Function-->
+<script>
+    var video = document.getElementById("bgVideo");
+    var btn = document.getElementById("myBtn");
+
+    function playPause() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause Video";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play Video";
+        }
+    }
+</script>
+<script>
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+    modal.style.display = "block";
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script>
+    var video = document.getElementById("bgVideo");
+    var muteBtn = document.getElementById("muteBtn");
+    video.muted;
+
+    function muteUnmute() {
+        if (video.muted) {
+            video.muted = false;
+            muteBtn.innerHTML = "Mute Video";
+        } else {
+            video.muted = true;
+            muteBtn.innerHTML = "Unmute Video";
+        }
+    }
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>
