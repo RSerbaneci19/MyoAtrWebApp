@@ -2,6 +2,9 @@
 <head>
 </head>
 <body>
+<div><strong>SCROLL DOWN FOR ENGLISH VERSION</strong></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
 <div>Draga <strong>${firstName}</strong>,</div>
 
 <div>
@@ -37,7 +40,7 @@
         <br />
         <ul>
             <li><strong>Donatie in numerar</strong> la unul din voluntarii locali ( Oana Casandra Olaru / Marian Toderascu )</li>
-            <li><strong>In acest caz, te rugam sa ne contactezi, fie dand reply la prezentul mail, fie telefonic la numarul 0040 723.094.907</strong></li>
+            <strong>In acest caz, te rugam sa ne contactezi, fie dand reply la prezentul mail, fie telefonic la numarul 0040 723.094.907</strong>
             <div>&nbsp;</div>
             <li><strong>Transfer Bancar</strong> pentru efectuarea caruia te rugam sa folosesti detaliile de mai jos:</li>
             <strong>ASOCIATIA TANGO MYO |
@@ -45,7 +48,7 @@
             BANCA TRANSILVANIA S.A. |
             IBAN: RO65BTRLRONCRT0346760101 |
             DETALII PLATA (DE COMPLETAT OBLIGATORIU): CV CONTRACT DE DONATIE RAPSODII DE TANGO</strong>
-            <li><strong>In acest caz, te rugam sa ne trimiti prin email o copie dupa CI pentru completarea contractului de donatie aferent transferului!</strong></li>
+            <div><strong>In acest caz, te rugam sa ne trimiti prin email o copie dupa CI pentru completarea contractului de donatie aferent transferului!</strong></div>
         </ul>
     </div>
 
@@ -112,7 +115,7 @@
                 BANCA TRANSILVANIA S.A. |
                 IBAN: RO65BTRLRONCRT0346760101 |
                 DETALII PLATA (DE COMPLETAT OBLIGATORIU): CV CONTRACT DE DONATIE RAPSODII DE TANGO</strong>
-            <li><strong>In this case please send to us a copy of your ID so we can fill out the donation contract.</strong></li>
+            <div><strong>In this case please send to us a copy of your ID so we can fill out the donation contract.</strong></div>
         </ul>
     </div>
 
