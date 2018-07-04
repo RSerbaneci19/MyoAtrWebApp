@@ -36,19 +36,26 @@
 
     <div>&nbsp;</div>
 
-    <div>Optiuni de plata :&nbsp;<br />
-        <br />
+    <div>Optiuni de plata :&nbsp;<br/>
+        <br/>
         <ul>
-            <li><strong>Donatie in numerar</strong> la unul din voluntarii locali ( Oana Casandra Olaru / Marian Toderascu )</li>
-            <strong>In acest caz, te rugam sa ne contactezi, fie dand reply la prezentul mail, fie telefonic la numarul 0040 723.094.907</strong>
+            <li><strong>Donatie in numerar</strong> la unul din voluntarii locali ( Oana Casandra Olaru / Marian
+                Toderascu )
+            </li>
+            <strong>In acest caz, te rugam sa ne contactezi, fie dand reply la prezentul mail, fie telefonic la numarul
+                0040 723.094.907</strong>
             <div>&nbsp;</div>
-            <li><strong>Transfer Bancar</strong> pentru efectuarea caruia te rugam sa folosesti detaliile de mai jos:</li>
-            <strong>ASOCIATIA TANGO MYO |
-            ACIF: 35936980 |
-            BANCA TRANSILVANIA S.A. |
-            IBAN: RO65BTRLRONCRT0346760101 |
-            DETALII PLATA (DE COMPLETAT OBLIGATORIU): CV CONTRACT DE DONATIE RAPSODII DE TANGO</strong>
-            <div><strong>In acest caz, te rugam sa ne trimiti prin email o copie dupa CI pentru completarea contractului de donatie aferent transferului!</strong></div>
+            <li><strong>Transfer Bancar</strong> pentru efectuarea caruia te rugam sa folosesti detaliile de mai jos:
+            </li>
+            <strong>
+                <div>ASOCIATIA TANGO MYO</div>
+                <div>CIF: 35936980</div>
+                <div>BANCA TRANSILVANIA S.A.</div>
+                <div>IBAN: RO65BTRLRONCRT0346760101</div>
+                <div>DETALII PLATA (DE COMPLETAT OBLIGATORIU): CV CONTRACT DE DONATIE RAPSODII DE TANGO</div>
+            </strong>
+            <div><strong>In acest caz, te rugam sa ne trimiti prin email o copie dupa CI pentru completarea contractului
+                de donatie aferent transferului!</strong></div>
         </ul>
     </div>
 
@@ -110,11 +117,14 @@
             <strong>In this case please contact us either by replying to this email or calling us at the following phone number: 0040 723.094.907</strong>
             <div>&nbsp;</div>
             <li><strong>Bank Transfer</strong> using the following details ( Also please make sure the full amount will be credited into our account ):</li>
-            <strong>ASOCIATIA TANGO MYO |
-                ACIF: 35936980 |
-                BANCA TRANSILVANIA S.A. |
-                IBAN: RO65BTRLRONCRT0346760101 |
-                DETALII PLATA (DE COMPLETAT OBLIGATORIU): CV CONTRACT DE DONATIE RAPSODII DE TANGO</strong>
+            <strong>
+                <div>ASOCIATIA TANGO MYO</div>
+                <div>CIF: 35936980</div>
+                <div>BANCA TRANSILVANIA S.A.</div>
+                <div>IBAN: RO65BTRLRONCRT0346760101</div>
+                <div>IBAN: RO15BTRLEURCRT0346760101 (For EUR Transfers)</div>
+                <div>PAYMENT DETAILS(Please remember to fill in this field): CV CONTRACT DE DONATIE RAPSODII DE TANGO</div>
+            </strong>
             <div><strong>In this case please send to us a copy of your ID so we can fill out the donation contract.</strong></div>
         </ul>
     </div>
