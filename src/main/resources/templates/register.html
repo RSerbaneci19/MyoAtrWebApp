@@ -101,7 +101,8 @@
             <div class="col-md-4 selectContainer">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                    <select name="partnerConfirm" th:field="*{soloOrPartner}" class="form-control selectpicker" onchange="partnerToggle(this)">
+                    <select name="partnerConfirm" th:field="*{soloOrPartner}" class="form-control selectpicker"
+                            onchange="partnerToggle(this)">
                         <option value="">Selectati Da sau Nu</option>
                         <option value="cuPartener">Da</option>
                         <option value="faraPartener">Nu</option>
@@ -123,7 +124,7 @@
 
         <!-- Check Boxes -->
         <div class="form-group">
-            <label class="col-md-4 control-label">Lista Workshopuri</label>
+            <label class="col-md-4 control-label">Milongas</label>
             <div class="col-md-4" id="checkboxes">
                 <div align="left " class="radio">
                     <label>
@@ -146,6 +147,9 @@
                         Despedida - Special Guests Performance: 40 RON / 8,5 EUR
                     </label>
                 </div>
+            </div>
+            <label class="col-md-4 control-label">Workshops</label>
+            <div class="col-md-4" id="checkboxes3">
                 <div align="left " class="radio">
                     <label>
                         <input type="checkbox" th:field="*{workshops}" name="workshop3"
