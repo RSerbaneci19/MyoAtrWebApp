@@ -5,7 +5,7 @@
 <div>Draga <strong>${firstName}</strong>,</div>
 
 <div>
-    <p>Iti multumim pentru inregistrarea la evenimentul <em>Rapsodii de Toamna (2) cu Maja&nbsp;Petrovic si Marko Miljevic</em> </p>
+    <p>Iti multumim pentru inregistrarea la evenimentul <em>Rapsodii de Tango (2) cu Maja&nbsp;Petrovic si Marko Miljevic</em> </p>
 
     <div>Ai optat pentru:</div>
 
@@ -51,7 +51,7 @@
 
     <div>​</div>
 
-    <div>Dorim sa-ti atragem atentia ca plata pentru evenimentul "Rapsodii de Toamna cu Maja si Marko" este considerata a fi DONATIE in contul unei asociatii non-profit si, astfel, nu poate fi RESTITUITA. Iti multumim pentru intelegere.</div>
+    <div>Dorim sa-ti atragem atentia ca plata pentru evenimentul "Rapsodii de Tango cu Maja si Marko" este considerata a fi DONATIE in contul unei asociatii non-profit si, astfel, nu poate fi RESTITUITA. Iti multumim pentru intelegere.</div>
 
     <div>&nbsp;</div>
 
@@ -72,7 +72,7 @@
 <div>Dear <strong>${firstName}</strong>,</div>
 
 <div>
-    <p>Thank you for enrolling at <em>Rapsodii de Toamna (2) cu Maja&nbsp;Petrovic si Marko Miljevic</em> </p>
+    <p>Thank you for enrolling at <em>Rapsodii de Tango (2) cu Maja&nbsp;Petrovic si Marko Miljevic</em> </p>
 
     <div>You have opted for:</div>
 

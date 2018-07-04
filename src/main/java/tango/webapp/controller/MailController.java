@@ -51,7 +51,7 @@ public class MailController {
 
         helper.setTo(userController.getUserFormModelMap().get("eMail"));
         helper.setText(text, true);
-        helper.setSubject("Autumn Tango Rhapsodies - Registration");
+        helper.setSubject("Tango Rhapsodies - Registration");
         javaMailSender.send(message);
         userController.getUserFormModelMap().clear();
     }
