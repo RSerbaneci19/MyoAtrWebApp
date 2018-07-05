@@ -61,13 +61,18 @@ public class UserController {
 
         double[] doubleList = new double[numbers.size()];
         Double totalAmount = 0.0;
+        Double totalAmountRon = 0.0;
         for (int i = 0; i < numbers.size(); ++i) {
             doubleList[i] = Double.parseDouble(numbers.get(i));
             totalAmount += doubleList[i];
+            totalAmountRon = totalAmount * 4.66;
         }
 
         userFormModel.put("totalAmount", totalAmount.toString());
         userForm.setTotalAmount(totalAmount.toString());
+        userForm.setTotalAmountRon(totalAmountRon.toString());
+
+        userFormModel.put("totalAmountRon", userForm.getTotalAmountRon());
 
         if (bindingResult.hasErrors()) {
             return "Sorry MAN ! NOT THIS TIME";

@@ -26,7 +26,7 @@
     <#if workshops10??><li>${workshops10}</li></#if>
     <#if workshops11??><li>${workshops11}</li></#if>
     </strong></ul>
-    Total de plata : <strong>${totalAmount} €</strong>
+    Total de plata EUR: <strong>${totalAmount} €</strong> / <strong>${totalAmountRon} RON</strong>
 
     <div>&nbsp;</div>
 
@@ -100,7 +100,7 @@
     <#if workshops10??><li>${workshops10}</li></#if>
     <#if workshops11??><li>${workshops11}</li></#if>
     </strong></ul>
-    Total amount to pay for your selection is : <strong>${totalAmount} €</strong>
+    Total amount to pay for your selection is : <strong>${totalAmount} €</strong> / <strong>${totalAmountRon} RON</strong>
 
     <div>&nbsp;</div>
 

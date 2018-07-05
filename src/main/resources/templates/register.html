@@ -228,6 +228,7 @@
                         class="glyphicon glyphicon-send"></span></button>
                 <div class="totalAmount">
                     <p id="total" th:field="*{totalAmount}"></p>
+                    <p id="total1" th:field="*{totalAmountRon}"></p>
                 </div>
             </div>
         </div>
@@ -246,6 +247,21 @@
         });
 
         document.getElementById("total").innerHTML = "Total : " + sum + '€';
+    }
+</script>
+<script>
+    $("input[type=checkbox]").change(function () {
+        recalculate();
+    });
+
+    function recalculate() {
+        var sum = 0.00;
+
+        $("input[type=checkbox]:checked").each(function () {
+            sum += parseFloat($(this).attr("rel")) * 4.66;
+        });
+
+        document.getElementById("total1").innerHTML = "Total : " + sum + 'RON';
     }
 </script>
 <script>
