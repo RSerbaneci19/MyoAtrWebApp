@@ -254,11 +254,11 @@
         recalculate();
     });
 
-    function recalculate() {
-        var sum = 0.00;
+    function recalculateRon() {
+        var sum = 0;
 
         $("input[type=checkbox]:checked").each(function () {
-            sum += parseFloat($(this).attr("rel")) * 4.66;
+            sum += parseInt($(this).attr("rel")) * 4.66;
         });
 
         document.getElementById("total1").innerHTML = "Total : " + sum + 'RON';

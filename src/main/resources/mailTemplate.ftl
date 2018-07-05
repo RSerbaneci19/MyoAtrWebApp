@@ -26,7 +26,7 @@
     <#if workshops10??><li>${workshops10}</li></#if>
     <#if workshops11??><li>${workshops11}</li></#if>
     </strong></ul>
-    Total de plata EUR: <strong>${totalAmount} €</strong> / <strong>${totalAmountRon} RON</strong>
+    Total de plata: <strong>${totalAmount} €</strong> / <strong>${totalAmountRon} RON</strong>
 
     <div>&nbsp;</div>
 
