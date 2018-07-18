@@ -26,15 +26,6 @@ public class User {
     private String adminUser;
     private String adminPassword;
     private String totalAmount;
-    private String totalAmountRon;
-
-    public String getTotalAmountRon() {
-        return totalAmountRon;
-    }
-
-    public void setTotalAmountRon(String totalAmountRon) {
-        this.totalAmountRon = totalAmountRon;
-    }
 
     public String getTotalAmount() {
         return totalAmount;

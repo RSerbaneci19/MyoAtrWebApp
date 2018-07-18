@@ -47,35 +47,32 @@ public class UserController {
         String regExp = "[\\$\\£\\€](\\d+(?:\\.\\d{1,2})?)";
         String str = userForm.getWorkshops();
         ArrayList<String> numbers = new ArrayList<>();
-        String[] workshops = str.split(",");
-
-        for (int i = 0; i < workshops.length; i++) {
-            userFormModel.put("workshops" + i, workshops[i]);
-        }
 
         Pattern p = Pattern.compile(regExp);
         Matcher matcher = p.matcher(str);
         while (matcher.find()) {
-              numbers.add(matcher.group().replaceAll("€", ""));
+            numbers.add(matcher.group().replaceAll("€", ""));
         }
 
         double[] doubleList = new double[numbers.size()];
         Double totalAmount = 0.0;
-        Double totalAmountRon = 0.0;
         for (int i = 0; i < numbers.size(); ++i) {
             doubleList[i] = Double.parseDouble(numbers.get(i));
             totalAmount += doubleList[i];
-            totalAmountRon = totalAmount * 4.66;
         }
 
         userFormModel.put("totalAmount", totalAmount.toString());
         userForm.setTotalAmount(totalAmount.toString());
-        userForm.setTotalAmountRon(totalAmountRon.toString());
 
-        userFormModel.put("totalAmountRon", userForm.getTotalAmountRon());
+        String[] workshops = str.split(",");
+
+        for (int i = 0; i < workshops.length; i++) {
+            workshops[i] = workshops[i].replace("€", "RON ");
+            userFormModel.put("workshops" + i, workshops[i]);
+        }
 
         if (bindingResult.hasErrors()) {
-            return "Sorry MAN ! NOT THIS TIME";
+            return "Nigger u fucked up";
         }
 
         userService.save(userForm);
