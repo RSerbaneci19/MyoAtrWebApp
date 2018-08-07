@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.freemarker.FreeMarkerTemplateUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import tango.webapp.repository.UserRepository;
 
 import javax.mail.internet.MimeMessage;
 
@@ -20,9 +19,6 @@ public class MailController {
 
     @Autowired
     private JavaMailSender javaMailSender;
-
-    @Autowired
-    UserRepository userRepository;
 
     @Autowired
     private Configuration freemarkerConfig;
@@ -35,8 +31,8 @@ public class MailController {
         try {
             sendEmail();
             return "confirmation";
-        } catch(Exception ex) {
-            return "Error in sending email: " +ex;
+        } catch (Exception ex) {
+            return "Error in sending email: " + ex;
         }
     }
 
@@ -53,6 +49,7 @@ public class MailController {
         helper.setText(text, true);
         helper.setSubject("Rapsodii de Tango 2 - Registration");
         javaMailSender.send(message);
+
         userController.getUserFormModelMap().clear();
     }
 }

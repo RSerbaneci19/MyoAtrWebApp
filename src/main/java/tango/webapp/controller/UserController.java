@@ -72,7 +72,7 @@ public class UserController {
         }
 
         if (bindingResult.hasErrors()) {
-            return "Nigger u fucked up";
+            return "U fucked up bruh!";
         }
 
         userService.save(userForm);
